@@ -1,6 +1,51 @@
 .jumbotron{
-  background-color: lightblue;
+  background-image: url(../img/jumbo_img.jpg);
+  background-size: cover;
+  // background-color: blue;
   height: 450px;
+  .jumbotron-text{
+    transform: translate(350px, 50px);
+    h1, h2, li{
+      color: $colorWhite;
+      font-weight: lighter;
+      list-style: none;
+      padding-bottom: 15px;
+    }
+    h1{
+      font-size: 30px;
+    }
+    li{
+      padding-bottom: 10px;
+      font-size: 16px;
+      i{
+        font-size: 15px;
+        color: grey;
+        padding-right: 5px;
+      }
+    }
+    button{
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: grey;
+      border: none;
+      cursor: pointer;
+      .download{
+        color: $colorWhite;
+        text-align: left;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        border-right: 1px solid white;
+        float: left;
+        padding-right: 15px;
+      }
+      i{
+        color: $colorWhite;
+        float: right;
+        font-size: 25px;
+        padding: 5px 0 0 15px;
+      }
+    }
+  }
 }
 
 .jumbotron-bottom{

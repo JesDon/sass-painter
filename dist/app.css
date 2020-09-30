@@ -76,8 +76,61 @@ header {
 }
 
 .jumbotron {
-  background-color: lightblue;
+  background-color: blue;
   height: 450px;
+}
+
+.jumbotron .jumbotron-text {
+  transform: translate(350px, 50px);
+}
+
+.jumbotron .jumbotron-text h1,
+.jumbotron .jumbotron-text h2,
+.jumbotron .jumbotron-text li {
+  color: white;
+  font-weight: lighter;
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.jumbotron .jumbotron-text h1 {
+  font-size: 30px;
+}
+
+.jumbotron .jumbotron-text li {
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.jumbotron .jumbotron-text li i {
+  font-size: 15px;
+  color: grey;
+  padding-right: 5px;
+}
+
+.jumbotron .jumbotron-text button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: grey;
+  border: none;
+  cursor: pointer;
+}
+
+.jumbotron .jumbotron-text button .download {
+  color: white;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  border-right: 1px solid white;
+  float: left;
+  padding-right: 15px;
+}
+
+.jumbotron .jumbotron-text button i {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 5px 0 0 15px;
 }
 
 .jumbotron-bottom {
