@@ -2,3 +2,54 @@ header{
   background-color: black;
   height: 100px;
 }
+
+.header-top-menu{
+  @include listInline;
+  justify-content: flex-end;
+  padding-top: 10px;
+  margin-right: 70px;
+  a{
+    text-decoration: none;
+    color: grey;
+    padding: 0 30px 0 10px;
+    font-size: 12px;
+  }
+  i{
+    @include symbols
+  }
+  button{
+    font-size: 12px;
+    padding: 1px;
+    .arrow{
+      color: black;
+      padding-left: 15px;
+    }
+  }
+}
+
+.header-main-menu{
+  width: 90%;
+  margin: auto;
+  padding-top: 23px;
+  .logo img{
+    width: 90px;
+    float: left;
+  }
+  .menu-list{
+    @include listInline;
+    justify-content: flex-start;
+    padding-top: 8px;
+      li{
+        text-decoration: none;
+        color: $colorWhite;
+        padding-left: 55px;
+        font-size: 13px;
+        i{
+          color: grey;
+          vertical-align: middle;
+          padding-left: 5px;
+          cursor: pointer;
+        }
+      }
+  }
+}

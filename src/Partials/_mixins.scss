@@ -2,3 +2,13 @@
 //   width: 70%;
 //   margin: auto;
 // }
+
+@mixin listInline{
+  display: flex;
+  list-style: none;
+}
+
+@mixin symbols{
+  color: #009CFF;
+  font-size: 14px;
+}
