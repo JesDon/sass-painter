@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  height: 100px;
+}
+
+.jumbotron {
+  background-color: lightblue;
+  height: 450px;
+}
+
+.jumbotron-bottom {
+  background-color: lightgrey;
+  height: 60px;
+}
+
+.first-section {
+  background-color: purple;
+}
+
+.second-section {
+  background-color: pink;
+}
+
+.third-section {
+  background-color: yellow;
+}
+
+.section-container {
+  height: 500px;
+}
+
+.section-content {
+  width: 70%;
+  margin: auto;
+}
+
+footer {
+  background-color: lightgrey;
+  height: 280px;
+}
+
+.footer-bottom {
+  background-color: darkgrey;
+  height: 100px;
+}
+
