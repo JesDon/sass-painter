@@ -58,7 +58,7 @@
       width: 380px;
       height: 425px;
       color: white;
-      display: block;
+      display: block;      
       margin-left: 880px;
       margin-top: -320px;
       position: relative;
@@ -119,6 +119,18 @@
 }
 
 .jumbotron-bottom{
-  background-color: lightgrey;
+  background-color: #E6E6E6;
   height: 60px;
+    ul{
+      @include listInline;
+      width: 90%;
+
+      li{
+        padding-right: 40px;
+        font-size: 18px;
+        color: #555;
+        font-weight: lighter;
+        line-height: 60px;
+      }
+    }
 }

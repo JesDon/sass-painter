@@ -184,8 +184,20 @@ header {
 }
 
 .jumbotron-bottom {
-  background-color: lightgrey;
+  background-color: #E6E6E6;
   height: 60px;
+}
+.jumbotron-bottom ul {
+  display: flex;
+  list-style: none;
+  width: 90%;
+}
+.jumbotron-bottom ul li {
+  padding-right: 40px;
+  font-size: 18px;
+  color: #555;
+  font-weight: lighter;
+  line-height: 60px;
 }
 
 .first-section {
