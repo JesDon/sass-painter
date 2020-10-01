@@ -5,12 +5,22 @@
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.section-container {
+  width: 100%;
+}
+
+.section-content {
+  width: 70%;
+  margin: auto;
 }
 
 header {
   background-color: black;
   height: 100px;
+  width: 100%;
 }
 
 .header-top-menu {
@@ -75,7 +85,8 @@ header {
   height: 450px;
 }
 .jumbotron-text {
-  transform: translate(370px, 50px);
+  margin-left: 370px;
+  padding-top: 50px;
 }
 .jumbotron-text h1, .jumbotron-text h2, .jumbotron-text li {
   color: white;
@@ -122,12 +133,12 @@ header {
 }
 .jumbotron .jumbotron-trial {
   background-color: black;
-  width: 380px;
+  width: 390px;
   height: 425px;
   color: white;
   display: block;
   margin-left: 880px;
-  margin-top: -320px;
+  margin-top: -367px;
   position: relative;
 }
 .jumbotron .jumbotron-trial .trial-price {
@@ -186,39 +197,84 @@ header {
 .jumbotron-bottom {
   background-color: #E6E6E6;
   height: 60px;
+  width: 100%;
 }
 .jumbotron-bottom ul {
   display: flex;
   list-style: none;
   width: 90%;
+  margin-left: 120px;
 }
 .jumbotron-bottom ul li {
-  padding-right: 40px;
-  font-size: 18px;
+  padding: 0 25px 0 25px;
+  font-size: 16px;
   color: #555;
   font-weight: lighter;
   line-height: 60px;
+  text-align: center;
+}
+.jumbotron-bottom ul #overview {
+  background-color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .first-section {
-  background-color: purple;
+  background-image: url(../img/first-section-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.first-section .text {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: lighter;
+}
+.first-section .text h1 {
+  font-size: 35px;
+}
+.first-section .text h3 {
+  font-size: 17px;
+  line-height: 1.6;
+  padding: 20px 0 30px 0;
+}
+.first-section .text img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 .second-section {
-  background-color: pink;
+  background-color: white;
+}
+.second-section .text {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: lighter;
+  color: #333;
+}
+.second-section .text h1 {
+  font-size: 35px;
+}
+.second-section .text h3 {
+  font-size: 17px;
+  line-height: 1.6;
+  padding: 20px 0 30px 0;
+}
+.second-section .animal-img img {
+  width: 950px;
+  text-align: center;
+  margin: 40px 0 40px 0;
 }
 
 .third-section {
-  background-color: yellow;
-}
-
-.section-container {
-  height: 500px;
-}
-
-.section-content {
-  width: 70%;
-  margin: auto;
+  background-image: url(../img/third-section-bg.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  min-height: 600px;
 }
 
 footer {

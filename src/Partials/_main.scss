@@ -1,21 +1,37 @@
 .first-section{
-  background-color: purple;
+  background-image: url(../img/first-section-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   .text{
+     @include titles;
+      img{
+        width: 30px;
+        vertical-align: middle;
+        margin-right: 15px;
+        cursor: pointer;
+      }
+   }
 }
 
 .second-section{
-  background-color: pink;
+  background-color: white;
+  .text{
+    @include titles;
+    color: #333;
+  }
+  .animal-img{
+    img{
+      width: 950px;
+      text-align: center;
+      margin: 40px 0 40px 0;
+    }
+  }
 }
-
 
 .third-section{
-  background-color: yellow;
-}
-
-.section-container{
-  height: 500px;
-}
-
-.section-content{
-  width: 70%;
-  margin: auto;
+  background-image: url(../img/third-section-bg.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  min-height: 600px;
 }

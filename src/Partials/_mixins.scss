@@ -22,3 +22,18 @@
   border: none;
   cursor: pointer;
 }
+
+@mixin titles{
+  color: $colorWhite;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: lighter;
+  h1{
+    font-size: 35px;
+  }
+  h3{
+    font-size: 17px;
+    line-height: 1.6;
+    padding: 20px 0 30px 0;
+  }
+}
