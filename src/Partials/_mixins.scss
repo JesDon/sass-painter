@@ -9,6 +9,16 @@
 }
 
 @mixin symbols{
-  color: #009CFF;
+  color: $colorBlue;
   font-size: 14px;
+}
+
+@mixin trialStructure{
+  width: 50%;
+  height: 40%;
+}
+
+@mixin buttons{
+  border: none;
+  cursor: pointer;
 }

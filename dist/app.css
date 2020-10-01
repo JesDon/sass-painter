@@ -20,24 +20,21 @@ header {
   padding-top: 10px;
   margin-right: 70px;
 }
-
 .header-top-menu a {
   text-decoration: none;
   color: grey;
   padding: 0 30px 0 10px;
   font-size: 12px;
 }
-
 .header-top-menu i {
   color: #009CFF;
   font-size: 14px;
 }
-
 .header-top-menu button {
   font-size: 12px;
   padding: 1px;
+  cursor: pointer;
 }
-
 .header-top-menu button .arrow {
   color: black;
   padding-left: 15px;
@@ -48,26 +45,22 @@ header {
   margin: auto;
   padding-top: 23px;
 }
-
 .header-main-menu .logo img {
   width: 90px;
   float: left;
 }
-
 .header-main-menu .menu-list {
   display: flex;
   list-style: none;
   justify-content: flex-start;
   padding-top: 8px;
 }
-
 .header-main-menu .menu-list li {
   text-decoration: none;
   color: white;
   padding-left: 55px;
   font-size: 13px;
 }
-
 .header-main-menu .menu-list li i {
   color: grey;
   vertical-align: middle;
@@ -76,47 +69,43 @@ header {
 }
 
 .jumbotron {
-  background-color: blue;
+  background-image: url(../img/jumbo_img.jpg);
+  background-size: cover;
+  background-position: center;
   height: 450px;
 }
-
-.jumbotron .jumbotron-text {
-  transform: translate(350px, 50px);
+.jumbotron-text {
+  transform: translate(370px, 50px);
 }
-
-.jumbotron .jumbotron-text h1,
-.jumbotron .jumbotron-text h2,
-.jumbotron .jumbotron-text li {
+.jumbotron-text h1, .jumbotron-text h2, .jumbotron-text li {
   color: white;
   font-weight: lighter;
   list-style: none;
   padding-bottom: 15px;
 }
-
-.jumbotron .jumbotron-text h1 {
-  font-size: 30px;
+.jumbotron-text h1 {
+  font-size: 27px;
 }
-
-.jumbotron .jumbotron-text li {
-  padding-bottom: 10px;
+.jumbotron-text h2 {
+  font-size: 20px;
+}
+.jumbotron-text li {
+  padding-bottom: 12px;
   font-size: 16px;
 }
-
-.jumbotron .jumbotron-text li i {
+.jumbotron-text li i {
   font-size: 15px;
   color: grey;
   padding-right: 5px;
 }
-
-.jumbotron .jumbotron-text button {
+.jumbotron-text button {
   margin-top: 20px;
   padding: 10px 15px;
-  background-color: grey;
+  background-color: #5C5C5A;
   border: none;
   cursor: pointer;
 }
-
-.jumbotron .jumbotron-text button .download {
+.jumbotron-text button .download {
   color: white;
   text-align: left;
   font-size: 14px;
@@ -125,12 +114,73 @@ header {
   float: left;
   padding-right: 15px;
 }
-
-.jumbotron .jumbotron-text button i {
+.jumbotron-text button i {
   color: white;
   float: right;
   font-size: 25px;
   padding: 5px 0 0 15px;
+}
+.jumbotron .jumbotron-trial {
+  background-color: black;
+  width: 380px;
+  height: 425px;
+  color: white;
+  display: block;
+  margin-left: 880px;
+  margin-top: -320px;
+  position: relative;
+}
+.jumbotron .jumbotron-trial .trial-price {
+  float: left;
+  width: 50%;
+  height: 40%;
+}
+.jumbotron .jumbotron-trial .trial-price .text {
+  padding: 40px 0 0 20px;
+}
+.jumbotron .jumbotron-trial .trial-price .text h1 {
+  font-weight: lighter;
+}
+.jumbotron .jumbotron-trial .trial-price .text p {
+  font-size: 15px;
+  color: grey;
+  padding: 8px 0 20px 0;
+}
+.jumbotron .jumbotron-trial .trial-price .text button {
+  background-color: #009CFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px 40px 10px 40px;
+  color: white;
+}
+.jumbotron .jumbotron-trial .trial-logo {
+  float: right;
+  width: 50%;
+  height: 40%;
+}
+.jumbotron .jumbotron-trial .trial-logo img {
+  float: right;
+  padding: 20px 10px 0 0;
+}
+.jumbotron .jumbotron-trial .trial-offer .offer-text {
+  background-color: #E6E6E6;
+  color: black;
+  height: 90px;
+  position: absolute;
+  bottom: 140px;
+  left: 20px;
+  padding: 12px;
+}
+.jumbotron .jumbotron-trial .trial-offer .offer-text h3 {
+  font-size: 18px;
+}
+.jumbotron .jumbotron-trial .trial-offer .offer-text p {
+  font-size: 13px;
+}
+.jumbotron .jumbotron-trial .trial-offer .offer-text a {
+  color: #009CFF;
+  font-size: 13px;
+  text-decoration: none;
 }
 
 .jumbotron-bottom {
@@ -168,4 +218,3 @@ footer {
   background-color: darkgrey;
   height: 100px;
 }
-

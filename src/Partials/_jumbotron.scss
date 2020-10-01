@@ -1,51 +1,121 @@
+// JUMBOTRON
+// VALORI GENERICI
 .jumbotron{
   background-image: url(../img/jumbo_img.jpg);
   background-size: cover;
-  // background-color: blue;
+  background-position: center;
   height: 450px;
-  .jumbotron-text{
-    transform: translate(350px, 50px);
-    h1, h2, li{
-      color: $colorWhite;
-      font-weight: lighter;
-      list-style: none;
-      padding-bottom: 15px;
-    }
-    h1{
-      font-size: 30px;
-    }
-    li{
-      padding-bottom: 10px;
-      font-size: 16px;
-      i{
-        font-size: 15px;
-        color: grey;
-        padding-right: 5px;
+    // TESTO A DESTRA
+    &-text{
+     transform: translate(370px, 50px);
+      h1, h2, li{
+        color: $colorWhite;
+        font-weight: lighter;
+        list-style: none;
+        padding-bottom: 15px;
+      }
+      h1{
+        font-size: 27px;
+      }
+      h2{
+        font-size: 20px;
+      }
+      li{
+        padding-bottom: 12px;
+        font-size: 16px;
+        i{
+          font-size: 15px;
+          color: grey;
+          padding-right: 5px;
+        }
+      }
+      // BOTTONE IN BASSO
+      button{
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #5C5C5A;
+        @include buttons;
+        .download{
+          color: $colorWhite;
+          text-align: left;
+          font-size: 14px;
+          font-family: 'Noto Sans', sans-serif;
+          border-right: 1px solid white;
+          float: left;
+          padding-right: 15px;
+        }
+        i{
+          color: $colorWhite;
+          float: right;
+          font-size: 25px;
+          padding: 5px 0 0 15px;
+        }
       }
     }
-    button{
-      margin-top: 20px;
-      padding: 10px 15px;
-      background-color: grey;
-      border: none;
-      cursor: pointer;
-      .download{
-        color: $colorWhite;
-        text-align: left;
-        font-size: 14px;
-        font-family: 'Noto Sans', sans-serif;
-        border-right: 1px solid white;
+    // BLOCCO NERO A SINISTRA
+    .jumbotron-trial{
+      background-color: black;
+      width: 380px;
+      height: 425px;
+      color: white;
+      display: block;
+      margin-left: 880px;
+      margin-top: -320px;
+      position: relative;
+      .trial-price{
         float: left;
-        padding-right: 15px;
+        @include trialStructure;
+        .text{
+          padding: 40px 0 0 20px;
+          h1{
+            font-weight: lighter;
+          }
+          p{
+            font-size: 15px;
+            color: grey;
+            padding: 8px 0 20px 0;
+          }
+          button{
+            background-color: $colorBlue;
+            @include buttons;
+            padding: 10px 40px 10px 40px;
+            color: $colorWhite
+          }
+        }
       }
-      i{
-        color: $colorWhite;
+      .trial-logo{
         float: right;
-        font-size: 25px;
-        padding: 5px 0 0 15px;
+        @include trialStructure;
+          img{
+            float: right;
+            padding: 20px 10px 0 0;
+          }
       }
+      .trial-offer{
+        .offer-text{
+          background-color: #E6E6E6;
+          color: black;
+          height: 90px;
+          position: absolute;
+          bottom: 140px;
+          left: 20px;
+          padding: 12px;
+            h3{
+              font-size: 18px;
+            }
+            p{
+              font-size: 13px;
+            }
+            a{
+              color: $colorBlue;
+              font-size: 13px;
+              text-decoration: none;
+            }
+        }
+
+      }
+
     }
-  }
 }
 
 .jumbotron-bottom{
